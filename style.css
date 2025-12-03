@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding-top: 0;
+}
+
+/* ✅ REMOVE NAVBAR GAP COMPLETELY */
+.navbar {
+  margin-bottom: 0 !important;
+}
+
+/* ✅ FIX SCROLL OFFSET FOR FIXED NAVBAR */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* MAIN SECTION */
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+       url("https://images.unsplash.com/photo-1555066931-4365d14bab8c");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+ /* SECTION SPACING  */
+
+section {
+  padding: 80px 0;
+}
+
+/* SECTION TITLE */
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* ABOUT */
+
+#about {
+  background-color: #f1f44973;
+  padding: 80px 0;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 350px;
+}
+
+.about-list li {
+  margin-bottom: 8px;
+}
+
+/* SKILLS BOX */
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.progress {
+  height: 22px;
+  border-radius: 20px;
+}
+
+.progress-bar {
+  background: #f9fd0d73;
+  font-weight: bold;
+}
+
+/* ✅ SKILL ANIMATION */
+.progress-bar {
+  width: 0;
+  transition: width 1.5s ease-in-out;
+}
+
+/* ✅ CARD HOVER */
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* RESUME */
+.resume-box {
+  background: rgb(246, 244, 244);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* ✅ PROFESSIONAL CONTACT SECTION */
+
+.contact-section {
+  background: #d2bb8d;  
+  padding: 80px 0;
+}
+
+.contact-form {
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.contact-form .form-control {
+  border-radius: 10px;
+  padding: 12px;
+}
+
+/* ✅ SOCIAL ICONS */
+.social-icons a {
+  font-size: 30px;
+  margin: 0 15px;
+  color: #333;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.social-icons a:hover {
+  transform: translateY(-6px);
+  color: #6b7f3f;  
+}
+
+
+/* ✅ FOOTER */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+#projects {
+  background-color: #e6cb95;
+  padding: 80px 0;
+}
+
+
+/* ✅ SOCIAL ICONS - ORIGINAL BRAND COLORS */
+.social-icons a {
+  font-size: 30px;
+  margin: 0 15px;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+/* WhatsApp Green */
+.social-icons .bi-whatsapp {
+  color: #25D366;
+}
+
+/* Instagram Gradient Pink */
+.social-icons .bi-instagram {
+  color: #E1306C;
+}
+
+/* Gmail Red */
+.social-icons .bi-envelope-fill {
+  color: #D14836;
+}
+
+/* Hover Effect */
+.social-icons a:hover {
+  transform: translateY(-6px) scale(1.1);
+}

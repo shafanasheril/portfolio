@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<title>shafana sheril</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+<!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- External CSS -->
+
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+<!-- NAVBAR -->
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">Shafana </a>    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+ <!-- MAIN SECTION -->
+
+  <header class="hero" id="home">
+   <div class="container">
+    <h1 class="fw-bold">Hi, I'm Shafana Sheril</h1>
+    <p class="lead"> FUll Stack Web Developer</p>
+    <a href="#contact" class="btn btn-primary mt-3"> Contact me</a>
+    </div>
+    </header>
+
+    <!-- ABOUT SECTION  -->
+
+     <section id="about">
+      <div class="container">
+       <div class="row align-items-center">
+
+      <div class="col-md-6">
+       <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" class="about-img" alt="">
+      </div>
+
+     <div class="col-md-6"> 
+      <h2 class="section-title">About me</h2>
+      <p class="mt-3">I am a full-stack web developer with experience in building dynamic, responsive, and user-friendly web applications using modern technologies.I enjoy turning ideas into efficient and scalable solutions.
+       Skilled in both frontend and backend development, I focus on creating seamless user experiences.
+       I am always eager to learn new technologies and take on challenging projects.</p>
+       <ul class="about-list">
+          <li>✔ Responsive Web Design</li>
+          <li>✔ Clean & Maintainable Code</li>
+          <li>✔ SEO Optimized UI</li>
+          <li>✔ Performance Focused</li>
+        </ul>
+      </div>
+      </div>
+    </div>
+     </section>
+     
+     <!-- SKILLS SECTION -->
+
+    <section id="skills" class="bg-light">
+      <div class="container">
+    <h2 class="section-title text-center">Skills</h2>
+
+    <div class="skill">
+      <label>HTML</label>
+      <div class="progress"><div class="progress-bar" style="width:95%">95%</div></div>
+    </div>
+
+    <div class="skill">
+      <label>CSS</label>
+      <div class="progress"><div class="progress-bar" style="width:90%">90%</div></div>
+    </div>
+
+    <div class="skill">
+      <label>Bootstrap</label>
+      <div class="progress"><div class="progress-bar" style="width:85%">89%</div></div>
+    </div>
+
+    <div class="skill">
+      <label>Python</label>
+      <div class="progress"><div class="progress-bar" style="width:85%">80%</div></div>
+    </div>
+
+    <div class="skill">
+      <label>JavaScript</label>
+      <div class="progress"><div class="progress-bar" style="width:70%">30%</div></div>
+    </div>
+  </div>
+    </section>
+
+     <!-- ANIMATION -->
+
+     <script>
+      const skillsSection = document.querySelector("#skills");
+      const progressBars = document.querySelectorAll(".progress-bar");
+
+     function animateSkills() {
+     const sectionTop = skillsSection.getBoundingClientRect().top;
+     const screenHeight = window.innerHeight;
+
+     if (sectionTop < screenHeight - 100) {
+       progressBars.forEach(bar => {
+        bar.style.width = bar.innerText;
+      });
+    }
+  }
+
+   window.addEventListener("scroll", animateSkills);
+  </script>
+
+
+        <!-- PROJECT SECTION -->
+
+      <section id="projects"> 
+        <div class="container text-center">  
+          <h2 class="section-title">Projects</h2>
+          <div class="row mt-4 g-4">
+
+            <div class="col-md-4">
+              <div class="card p-4 shadow-sm">
+                <h5>Video text extraction</h5>
+                <p>Designed a system to extract cctv video frames </p>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="card p-4 shadow-sm">
+                <h5>Business Website</h5>
+                <p>Responsive business website using Bootstrap.</p>
+              </div>
+            </div>  
+            
+            <div class="col-md-4">
+              <div class="card p-4 shadow-sm">
+                <h5>Portfolio Website</h5>
+                <p>Personal portfolio with modern UI design</p>
+              </div>
+            </div> 
+
+          </div>
+        </div>
+      </section>  
+
+
+      <!-- RESUME -->
+
+       <section id="resume" class="bg-light">
+        <div class="container">
+          <h2 class="section-title text-center">Resume</h2>
+          <div class="row mt-4">
+
+            <div class="col-md-6">
+              <h5>Education</h5>
+              <div class="resume-box">
+                <strong>Bachelor's of Computer Application </strong><br>
+                <small>2019-2022</small>
+              </div>
+            </div>  
+            
+            <div class="col-md-6">
+              <h5>Experience</h5>
+              <div class="resume-box">
+                <strong>Full Stack Web Developer</strong><br>
+                <small>2023-2024</small>
+              </div>
+            </div>
+            </div>
+
+         <div class="text-center mt-4">
+          <a href="resume.pdf" class="btn btn-primary btn-lg" download>Download Resume</a>
+         </div>
+         <!-- <div class="text-center mt-4">
+            <iframe src="resume.pdf" width="100%" height="500px" style="border: none;"></iframe>
+         </div> -->
+         </div>
+         </section>
+
+
+      <!-- CONTACT -->
+
+      <section id="contact" class="contact-section">
+      <div class="container">
+      <h2 class="section-title text-center mb-3">Contact Me</h2>
+      <p class="text-center mb-5">Feel free to reach out for projects, collaborations, or freelance work.</p>
+
+      <div class="row justify-content-center">
+      <div class="col-md-6">
+
+        <!-- ✅ CONTACT FORM -->
+        <form class="contact-form">
+          <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+          <input type="email" class="form-control mb-3" placeholder="Your Email" required>
+          <textarea class="form-control mb-3" rows="4" placeholder="Your Message" required></textarea>
+          <button class="btn btn-dark w-100">Send Message</button>
+        </form>
+
+        <!-- ✅ SOCIAL ICONS -->
+        <div class="social-icons text-center mt-4">
+          <a href="https://wa.me/9846086062" target="_blank" title="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+
+          <a href="https://instagram.com/__shafana._" target="_blank" title="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <a href="mailto:shafanasheril6@gmail.com" title="Gmail">
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+      
+      <!-- ✅ FOOTER -->
+
+     <footer>
+       <p>© 2025 Shafana | All Rights Reserved</p>
+     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    </body>
+    </html>
+
+
+
+      
+    
+
+
+
+
+
+
+
+
